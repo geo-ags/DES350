@@ -4,8 +4,100 @@
 <meta charset="utf-8">
 	<style>
 		
+		body{
+			background-color: #262932;
+			margin-top: 25px;
+		}
+		.number{
+			width: 150px;
+			height: 125px;
+			background-color: #191C23;
+			border-radius: 20px;
+			font: "droid-sans";
+			color: white;
+			font-size: 28pt;
+			margin-right: -4px;
+			border: none;
+			margin-right: 10px;
+		}
+		.zero{
+			width: 315px;
+			height: 125px;
+			background-color: #191C23;
+			border-radius: 20px;
+			font: "droid-sans";
+			color: white;
+			font-size: 28pt;
+			margin-right: 10px;
+			border: none;
+		}
+		.operator{
+			width: 150px;
+			height: 125px;
+			background-color: #25545c;
+			border-radius: 20px;
+			font: "droid-sans";
+			color: #A8ECC5;
+			font-size: 28pt;
+			margin-bottom: 0px;
+			border: none;
+		}
+		.clear{
+			width: 150px;
+			height: 125px;
+			background-color: #2f181e;
+			border-radius: 20px;
+			font: "droid-sans";
+			color: #de7a7a;
+			font-size: 28pt;
+			margin-right: 337px;
+			border: none;
+		}
+		.number:hover{
+			background-color: #232428;
+		}
+		.zero:hover{
+			background-color: #232428;
+		}
+		.operator:hover{
+			background-color: #232428;
+		}
+		.clear:hover{
+			background-color: #232428;
+		}
+		#display{
+			width: 640px;
+			height: 250px;
+			background-color: #191C23;
+			border-radius: 20px;
+			border: none;
+			text-align: right;
+			font: "droid-sans";
+			color: white;
+			font-size: 64pt;
+		}
+		#myCalculator{
+			/*Center Element*/
+			margin-left: calc(50% - 320px);
+		}
+		.inputRow1{
+			margin-top: 10px;
+		}
+		.inputRow2{
+			margin-top: 10px;
+		}
+		.inputRow3{
+			margin-top: 10px;
+		}
+		.inputRow4{
+			margin-top: 10px;
+		}
+		.inputRow5{
+			margin-top: 10px;
+		}
+		
 	</style>
-<title>Untitled Document</title>
+<title>Calculator</title>
 </head>
 
 <body>
@@ -18,40 +110,40 @@
 	</div>
 		
 	<!--Row 1-->
-	<div class="inputRow">
+	<div class="inputRow1">
+	<input type="button" class="clear" name="clear" value="C" onclick="calculator.display.value = ''">
+	<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value += '/'">
+	</div>
+		
+	<!--Row 2-->
+	<div class="inputRow2">
 	<input type="button" class="number" value="7" onclick="calculator.display.value +='7'">
 	<input type="button" class="number" value="8" onclick="calculator.display.value +='8'">
 	<input type="button" class="number" value="9" onclick="calculator.display.value +='9'">
-	<input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value += '/'">
-	</div>
-	
-	<!--Row 2-->
-	<div class="inputRow">
-	<input type="button" class="number" value="4" onclick="calculator.display.value +='4'">
-	<input type="button" class="number" value="5" onclick="calculator.display.value +='5'">
-	<input type="button" class="number" value="6" onclick="calculator.display.value +='6'">
 	<input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value += '*'">
 	</div>
 	
 	<!--Row 3-->
-	<div class="inputRow">
+	<div class="inputRow3">
+	<input type="button" class="number" value="4" onclick="calculator.display.value +='4'">
+	<input type="button" class="number" value="5" onclick="calculator.display.value +='5'">
+	<input type="button" class="number" value="6" onclick="calculator.display.value +='6'">
+	<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value += '-'">
+	</div>
+	
+	<!--Row 4-->
+	<div class="inputRow4">
 	<input type="button" class="number" value="1" onclick="calculator.display.value +='1'">
 	<input type="button" class="number" value="2" onclick="calculator.display.value +='2'">
 	<input type="button" class="number" value="3" onclick="calculator.display.value +='3'">
-	<input type="button" class="operator" name="subtract" value="-" onclick="calculator.display.value += '-'">
-	</div>
-
-	<!--Row 4-->
-	<div class="inputRow">
-	<input type="button" class="number" value="    0    " onclick="calculator.display.value +='0'">
-	<input type="button" class="number" value="." onclick="calculator.display.value +='.'">
 	<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value += '+'">
 	</div>
-	
+
 	<!--Row 5-->
-	<div class="inputRow">
-	<input type="button" class="operator" name="clear" value="    c    " onclick="calculator.display.value = ''">
-	<input type="button" class="operator" name="equals" value="   =   " onclick="calculator.display.value = eval(calculator.display.value)">
+	<div class="inputRow5">
+	<input type="button" class="zero" value="0" onclick="calculator.display.value +='0'">
+	<input type="button" class="number" value="." onclick="calculator.display.value +='.'">
+	<input type="button" class="operator" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
 	</div>
 		
 	</div>
