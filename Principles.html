@@ -1,0 +1,2035 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&display=swap" rel="stylesheet">
+<style>
+	
+	body{
+		background-color: #323136;
+	}
+	#coverText{
+		position: absolute;
+		z-index: 4;
+		font-family: 'Jost', sans-serif;
+		top: -5%;
+		left: 3.5%;
+	}
+	h1{
+		margin-top: 70px;
+		color: #b69c7b;
+		font-size: 102pt;
+	}
+	h2{
+		margin-top: -105px;
+		color: #f1f2f2;
+		font-size: 102pt;
+		line-height: 100pt;
+	}
+	#coverImage{
+		margin-top: 150px;
+	}
+	.rect1{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		height: 150px;
+		width: 46%;
+		background: #f8ab9f;
+		animation-name: rect1;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect1 {
+ 				 0%   {width: 0%}
+  				100%  {width: 46%}
+			}
+	.rect2{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 80px;
+		height: 155px;
+		width: 30%;
+		background: #8bcc97;
+		animation-name: rect2;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect2 {
+ 				 0%   {width: 0%}
+  				100%  {width: 30%}
+			}
+	.rect3{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 190px;
+		height: 160px;
+		width: 40%;
+		background: #9195b1;
+		animation-name: rect3;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect3 {
+ 				 0%   {width: 0%}
+  				100%  {width: 40%}
+			}
+	.rect4{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 380px;
+		height: 140px;
+		width: 50%;
+		background: #f4f0e9;
+		animation-name: rect4;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect4 {
+ 				 0%   {width: 0%}
+  				100%  {width: 50%}
+			}
+	.rect5{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 500px;
+		height: 140px;
+		width: 35%;
+		background: #fbea83;
+		animation-name: rect5;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect5 {
+ 				 0%   {width: 0%}
+  				100%  {width: 35%}
+			}
+	#bars{
+		position: fixed;
+		z-index: -3;
+		top: 0px;
+	}
+	.bar1{
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar2{
+		margin-top: 35px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar3{
+		margin-top: 40px;
+		height: 50px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar4{
+		margin-top: 45px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar5{
+		margin-top: 55px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar6{
+		margin-top: 60px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar7{
+		margin-top: 65px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar8{
+		margin-top: 70px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar9{
+		margin-top: 90px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar10{
+		margin-top: 95px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar11{
+		margin-top: 100px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar12{
+		margin-top: 105px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	#squares{
+		z-index: -4;
+	}
+	.s1{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 45px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -2s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s2{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 125px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s3{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 215px;
+		animation-name: s1;
+  		animation-duration: 18s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s4{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 310px;
+		animation-name: s1;
+  		animation-duration: 15s;
+		animation-iteration-count: infinite;
+  		animation-delay: -3s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s5{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 400px;
+		animation-name: s1;
+  		animation-duration: 10s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s6{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 600px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s7{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 520px;
+		animation-name: s1;
+  		animation-duration: 8s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s8{
+		height: 25px;
+		width: 25px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 720px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -4s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	h3{
+		z-index: -5;
+		font-family: 'Jost', sans-serif;
+		position: absolute;
+		font-size: 60vw;
+		text-align: center;
+		color: #f8ab9f;
+		margin: 60% auto;
+  		width: 100%;
+	}
+	p{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 5vw;
+		color: white;
+		margin-top: 1425px;
+		left: 3.5%;
+		line-height: 100%;
+	}
+	p2{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 2vw;
+		color: white;
+		margin-top: 1900px;
+		right: 60px;
+		line-height: 110%;
+	}
+	#one{
+		
+	}
+	#two{
+		position: relative;
+		top: 1400px;
+	}
+	#three{
+		position: relative;
+		top: 2800px;
+	}
+	#four{
+		position: relative;
+		top: 4200px;
+	}
+	#five{
+		position: relative;
+		top: 5600px;
+	}
+	#six{
+		position: relative;
+		top: 7000px;
+	}
+	#seven{
+		position: relative;
+		top: 8400px;
+	}
+	#eight{
+		position: relative;
+		top: 9800px;
+	}
+	#nine{
+		position: relative;
+		top: 11200px;
+	}
+	#ten{
+		position: relative;
+		top: 12600px;
+	}
+	
+@media only screen and (max-width: 1300px){
+	#coverText{
+		position: absolute;
+		z-index: 4;
+		font-family: 'Jost', sans-serif;
+		top: -5%;
+		left: 3.5%;
+	}
+	h1{
+		margin-top: 70px;
+		color: #b69c7b;
+		font-size: 102pt;
+	}
+	h2{
+		margin-top: -105px;
+		color: #f1f2f2;
+		font-size: 102pt;
+		line-height: 100pt;
+	}
+	#coverImage{
+		margin-top: 150px;
+	}
+	.rect1{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		height: 150px;
+		width: 46%;
+		background: #f8ab9f;
+		animation-name: rect1;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect1 {
+ 				 0%   {width: 0%}
+  				100%  {width: 46%}
+			}
+	.rect2{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 80px;
+		height: 155px;
+		width: 30%;
+		background: #8bcc97;
+		animation-name: rect2;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect2 {
+ 				 0%   {width: 0%}
+  				100%  {width: 30%}
+			}
+	.rect3{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 190px;
+		height: 160px;
+		width: 40%;
+		background: #9195b1;
+		animation-name: rect3;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect3 {
+ 				 0%   {width: 0%}
+  				100%  {width: 40%}
+			}
+	.rect4{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 380px;
+		height: 140px;
+		width: 50%;
+		background: #f4f0e9;
+		animation-name: rect4;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect4 {
+ 				 0%   {width: 0%}
+  				100%  {width: 50%}
+			}
+	.rect5{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 500px;
+		height: 140px;
+		width: 35%;
+		background: #fbea83;
+		animation-name: rect5;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect5 {
+ 				 0%   {width: 0%}
+  				100%  {width: 35%}
+			}
+	#bars{
+		position: fixed;
+		z-index: -3;
+		top: 0px;
+	}
+	.bar1{
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar2{
+		margin-top: 35px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar3{
+		margin-top: 40px;
+		height: 50px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar4{
+		margin-top: 45px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar5{
+		margin-top: 55px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar6{
+		margin-top: 60px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar7{
+		margin-top: 65px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar8{
+		margin-top: 70px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar9{
+		margin-top: 90px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar10{
+		margin-top: 95px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar11{
+		margin-top: 100px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar12{
+		margin-top: 105px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	#squares{
+		z-index: -4;
+	}
+	.s1{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 45px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -2s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s2{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 125px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s3{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 215px;
+		animation-name: s1;
+  		animation-duration: 18s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s4{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 310px;
+		animation-name: s1;
+  		animation-duration: 15s;
+		animation-iteration-count: infinite;
+  		animation-delay: -3s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s5{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 400px;
+		animation-name: s1;
+  		animation-duration: 10s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s6{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 600px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s7{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 520px;
+		animation-name: s1;
+  		animation-duration: 8s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s8{
+		height: 25px;
+		width: 25px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 720px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -4s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	h3{
+		z-index: -5;
+		font-family: 'Jost', sans-serif;
+		position: absolute;
+		font-size: 60vw;
+		text-align: center;
+		color: #f8ab9f;
+		margin: 95% auto;
+  		width: 100%;
+	}
+	p{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 5vw;
+		color: white;
+		margin-top: 1425px;
+		left: 3.5%;
+		line-height: 100%;
+	}
+	p2{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 2vw;
+		color: white;
+		margin-top: 1900px;
+		right: 60px;
+		line-height: 110%;
+	}
+	#one{
+		
+	}
+	#two{
+		position: relative;
+		top: 1400px;
+	}
+	#three{
+		position: relative;
+		top: 2800px;
+	}
+	#four{
+		position: relative;
+		top: 4200px;
+	}
+	#five{
+		position: relative;
+		top: 5600px;
+	}
+	#six{
+		position: relative;
+		top: 7000px;
+	}
+	#seven{
+		position: relative;
+		top: 8400px;
+	}
+	#eight{
+		position: relative;
+		top: 9800px;
+	}
+	#nine{
+		position: relative;
+		top: 11200px;
+	}
+	#ten{
+		position: relative;
+		top: 12600px;
+	}
+	}
+	
+@media only screen and (max-width: 1100px){
+	#coverText{
+		position: absolute;
+		z-index: 4;
+		font-family: 'Jost', sans-serif;
+		top: -5%;
+		left: 3.5%;
+	}
+	h1{
+		margin-top: 70px;
+		color: #b69c7b;
+		font-size: 96pt;
+	}
+	h2{
+		margin-top: -85px;
+		color: #f1f2f2;
+		font-size: 96pt;
+		line-height: 100pt;
+	}
+	#coverImage{
+		margin-top: 125px;
+	}
+	.rect1{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		height: 150px;
+		width: 46%;
+		background: #f8ab9f;
+		animation-name: rect1;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect1 {
+ 				 0%   {width: 0%}
+  				100%  {width: 46%}
+			}
+	.rect2{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 80px;
+		height: 155px;
+		width: 30%;
+		background: #8bcc97;
+		animation-name: rect2;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect2 {
+ 				 0%   {width: 0%}
+  				100%  {width: 30%}
+			}
+	.rect3{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 190px;
+		height: 160px;
+		width: 40%;
+		background: #9195b1;
+		animation-name: rect3;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect3 {
+ 				 0%   {width: 0%}
+  				100%  {width: 40%}
+			}
+	.rect4{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 380px;
+		height: 140px;
+		width: 50%;
+		background: #f4f0e9;
+		animation-name: rect4;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect4 {
+ 				 0%   {width: 0%}
+  				100%  {width: 50%}
+			}
+	.rect5{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 500px;
+		height: 140px;
+		width: 35%;
+		background: #fbea83;
+		animation-name: rect5;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect5 {
+ 				 0%   {width: 0%}
+  				100%  {width: 35%}
+			}
+	#bars{
+		position: fixed;
+		z-index: -3;
+		top: 0px;
+	}
+	.bar1{
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar2{
+		margin-top: 35px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar3{
+		margin-top: 40px;
+		height: 50px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar4{
+		margin-top: 45px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar5{
+		margin-top: 55px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar6{
+		margin-top: 60px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar7{
+		margin-top: 65px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar8{
+		margin-top: 70px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar9{
+		margin-top: 90px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar10{
+		margin-top: 95px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar11{
+		margin-top: 100px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar12{
+		margin-top: 105px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	#squares{
+		z-index: -4;
+	}
+	.s1{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 45px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -2s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s2{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 125px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s3{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 215px;
+		animation-name: s1;
+  		animation-duration: 18s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s4{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 310px;
+		animation-name: s1;
+  		animation-duration: 15s;
+		animation-iteration-count: infinite;
+  		animation-delay: -3s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s5{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 400px;
+		animation-name: s1;
+  		animation-duration: 10s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s6{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 600px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s7{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 520px;
+		animation-name: s1;
+  		animation-duration: 8s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s8{
+		height: 25px;
+		width: 25px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 720px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -4s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	h3{
+		z-index: -5;
+		font-family: 'Jost', sans-serif;
+		position: absolute;
+		font-size: 60vw;
+		text-align: center;
+		color: #f8ab9f;
+		margin: 115% auto;
+  		width: 100%;
+	}
+	p{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 5vw;
+		color: white;
+		margin-top: 1425px;
+		left: 3.5%;
+		line-height: 100%;
+	}
+	p2{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 2vw;
+		color: white;
+		margin-top: 1900px;
+		right: 60px;
+		line-height: 110%;
+	}
+	#one{
+		
+	}
+	#two{
+		position: relative;
+		top: 1400px;
+	}
+	#three{
+		position: relative;
+		top: 2800px;
+	}
+	#four{
+		position: relative;
+		top: 4200px;
+	}
+	#five{
+		position: relative;
+		top: 5600px;
+	}
+	#six{
+		position: relative;
+		top: 7000px;
+	}
+	#seven{
+		position: relative;
+		top: 8400px;
+	}
+	#eight{
+		position: relative;
+		top: 9800px;
+	}
+	#nine{
+		position: relative;
+		top: 11200px;
+	}
+	#ten{
+		position: relative;
+		top: 12600px;
+	}
+	}
+	
+@media only screen and (max-width: 800px){
+	
+	#coverText{
+		position: absolute;
+		z-index: 4;
+		font-family: 'Jost', sans-serif;
+		top: -5%;
+		left: 3.5%;
+	}
+	h1{
+		margin-top: 70px;
+		color: #b69c7b;
+		font-size: 64pt;
+	}
+	h2{
+		margin-top: -75px;
+		color: #f1f2f2;
+		font-size: 64pt;
+		line-height: 60pt;
+	}
+	#coverImage{
+		margin-top: 130px;
+	}
+	.rect1{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		height: 150px;
+		width: 46%;
+		background: #f8ab9f;
+		animation-name: rect1;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect1 {
+ 				 0%   {width: 0%}
+  				100%  {width: 46%}
+			}
+	.rect2{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 80px;
+		height: 155px;
+		width: 30%;
+		background: #8bcc97;
+		animation-name: rect2;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect2 {
+ 				 0%   {width: 0%}
+  				100%  {width: 30%}
+			}
+	.rect3{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 190px;
+		height: 160px;
+		width: 40%;
+		background: #9195b1;
+		animation-name: rect3;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect3 {
+ 				 0%   {width: 0%}
+  				100%  {width: 40%}
+			}
+	.rect4{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 380px;
+		height: 140px;
+		width: 50%;
+		background: #f4f0e9;
+		animation-name: rect4;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect4 {
+ 				 0%   {width: 0%}
+  				100%  {width: 50%}
+			}
+	.rect5{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 500px;
+		height: 140px;
+		width: 35%;
+		background: #fbea83;
+		animation-name: rect5;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect5 {
+ 				 0%   {width: 0%}
+  				100%  {width: 35%}
+			}
+	#bars{
+		position: fixed;
+		z-index: -3;
+		top: 0px;
+	}
+	.bar1{
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar2{
+		margin-top: 35px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar3{
+		margin-top: 40px;
+		height: 50px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar4{
+		margin-top: 45px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar5{
+		margin-top: 55px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar6{
+		margin-top: 60px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar7{
+		margin-top: 65px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar8{
+		margin-top: 70px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar9{
+		margin-top: 90px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar10{
+		margin-top: 95px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar11{
+		margin-top: 100px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar12{
+		margin-top: 105px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	#squares{
+		z-index: -4;
+	}
+	.s1{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 45px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -2s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s2{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 125px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s3{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 215px;
+		animation-name: s1;
+  		animation-duration: 18s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s4{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 310px;
+		animation-name: s1;
+  		animation-duration: 15s;
+		animation-iteration-count: infinite;
+  		animation-delay: -3s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s5{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 400px;
+		animation-name: s1;
+  		animation-duration: 10s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s6{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 600px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s7{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 520px;
+		animation-name: s1;
+  		animation-duration: 8s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s8{
+		height: 25px;
+		width: 25px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 720px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -4s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	h3{
+		z-index: -5;
+		font-family: 'Jost', sans-serif;
+		position: absolute;
+		font-size: 60vw;
+		text-align: center;
+		color: #f8ab9f;
+		margin: 175% auto;
+  		width: 100%;
+	}
+	p{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 5vw;
+		color: white;
+		margin-top: 1425px;
+		left: 3.5%;
+		line-height: 100%;
+	}
+	p2{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 2vw;
+		color: white;
+		margin-top: 1900px;
+		right: 60px;
+		line-height: 110%;
+	}
+	#one{
+		
+	}
+	#two{
+		position: relative;
+		top: 1400px;
+	}
+	#three{
+		position: relative;
+		top: 2800px;
+	}
+	#four{
+		position: relative;
+		top: 4200px;
+	}
+	#five{
+		position: relative;
+		top: 5600px;
+	}
+	#six{
+		position: relative;
+		top: 7000px;
+	}
+	#seven{
+		position: relative;
+		top: 8400px;
+	}
+	#eight{
+		position: relative;
+		top: 9800px;
+	}
+	#nine{
+		position: relative;
+		top: 11200px;
+	}
+	#ten{
+		position: relative;
+		top: 12600px;
+	}
+	
+	}
+	
+@media only screen and (max-width: 525px){
+	
+	#coverText{
+		position: absolute;
+		z-index: 4;
+		font-family: 'Jost', sans-serif;
+		top: -8%;
+		left: 3.5%;
+	}
+	h1{
+		margin-top: 70px;
+		color: #b69c7b;
+		font-size: 60pt;
+	}
+	h2{
+		margin-top: -55px;
+		color: #f1f2f2;
+		font-size: 64pt;
+		line-height: 60pt;
+	}
+	#coverImage{
+		margin-top: 130px;
+	}
+	.rect1{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		height: 150px;
+		width: 46%;
+		background: #f8ab9f;
+		animation-name: rect1;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect1 {
+ 				 0%   {width: 0%}
+  				100%  {width: 46%}
+			}
+	.rect2{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 80px;
+		height: 155px;
+		width: 30%;
+		background: #8bcc97;
+		animation-name: rect2;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect2 {
+ 				 0%   {width: 0%}
+  				100%  {width: 30%}
+			}
+	.rect3{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 190px;
+		height: 160px;
+		width: 40%;
+		background: #9195b1;
+		animation-name: rect3;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect3 {
+ 				 0%   {width: 0%}
+  				100%  {width: 40%}
+			}
+	.rect4{
+		position: absolute;
+		z-index: 2;
+		right: 0px;
+		margin-top: 380px;
+		height: 140px;
+		width: 50%;
+		background: #f4f0e9;
+		animation-name: rect4;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect4 {
+ 				 0%   {width: 0%}
+  				100%  {width: 50%}
+			}
+	.rect5{
+		position: absolute;
+		z-index: 3;
+		right: 0px;
+		margin-top: 500px;
+		height: 140px;
+		width: 35%;
+		background: #fbea83;
+		animation-name: rect5;
+ 		animation-duration: 3s;
+	}
+			@keyframes rect5 {
+ 				 0%   {width: 0%}
+  				100%  {width: 35%}
+			}
+	#bars{
+		position: fixed;
+		z-index: -3;
+		top: 0px;
+	}
+	.bar1{
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar2{
+		margin-top: 35px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar3{
+		margin-top: 40px;
+		height: 50px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar4{
+		margin-top: 45px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar5{
+		margin-top: 55px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar6{
+		margin-top: 60px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar7{
+		margin-top: 65px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar8{
+		margin-top: 70px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar9{
+		margin-top: 90px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar10{
+		margin-top: 95px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar11{
+		margin-top: 100px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	.bar12{
+		margin-top: 105px;
+		height: 40px;
+		width: 4000px;
+		background: #323136;
+	}
+	#squares{
+		z-index: -4;
+	}
+	.s1{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 45px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -2s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s2{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 125px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s3{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 215px;
+		animation-name: s1;
+  		animation-duration: 18s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0.5s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s4{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 310px;
+		animation-name: s1;
+  		animation-duration: 15s;
+		animation-iteration-count: infinite;
+  		animation-delay: -3s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s5{
+		height: 10px;
+		width: 10px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 400px;
+		animation-name: s1;
+  		animation-duration: 10s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s6{
+		height: 15px;
+		width: 15px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 600px;
+		animation-name: s1;
+  		animation-duration: 12s;
+		animation-iteration-count: infinite;
+  		animation-delay: 0s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s7{
+		height: 20px;
+		width: 20px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 520px;
+		animation-name: s1;
+  		animation-duration: 8s;
+		animation-iteration-count: infinite;
+  		animation-delay: -1s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	.s8{
+		height: 25px;
+		width: 25px;
+		background: #323136;
+		position: fixed;
+		right: 25%;
+		top: 720px;
+		animation-name: s1;
+  		animation-duration: 16s;
+		animation-iteration-count: infinite;
+  		animation-delay: -4s;
+		animation-timing-function: linear;
+	}
+			@keyframes s1 {
+				0%   {right:25%;}
+  				100% {right:75%; -webkit-transform: rotate(-360deg);}
+			}
+	h3{
+		z-index: -5;
+		font-family: 'Jost', sans-serif;
+		position: absolute;
+		font-size: 60vw;
+		text-align: center;
+		color: #f8ab9f;
+		margin: 320% auto;
+  		width: 100%;
+	}
+	p{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 36pt;
+		color: white;
+		margin-top: 1425px;
+		left: 3.5%;
+		line-height: 100%;
+	}
+	p2{
+		position: absolute;
+		z-index: 2;
+		font-family: 'Jost', sans-serif;
+		font-size: 12pt;
+		color: white;
+		margin-top: 1900px;
+		right: 60px;
+		line-height: 110%;
+	}
+	#one{
+		
+	}
+	#two{
+		position: relative;
+		top: 1400px;
+	}
+	#three{
+		position: relative;
+		top: 2800px;
+	}
+	#four{
+		position: relative;
+		top: 4200px;
+	}
+	#five{
+		position: relative;
+		top: 5600px;
+	}
+	#six{
+		position: relative;
+		top: 7000px;
+	}
+	#seven{
+		position: relative;
+		top: 8400px;
+	}
+	#eight{
+		position: relative;
+		top: 9800px;
+	}
+	#nine{
+		position: relative;
+		top: 11200px;
+	}
+	#ten{
+		position: relative;
+		top: 12600px;
+	}
+	}
+	
+@media only screen and (max-width: 411px){
+	
+	}
+	
+</style>
+	
+<title>Principles</title>
+</head>
+
+<body>
+
+<div id="coverText">
+	<h1>Dieter Rams:</h1>
+	<h2>10 Principles for<br>Good Design</h2>
+</div>
+	
+<div id="coverImage">
+	<div class="rect1"></div>
+	<div class="rect2"></div>
+	<div class="rect3"></div>
+	<div class="rect4"></div>
+	<div class="rect5"></div>
+</div>
+
+<div id="bars">
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+	<div class="bar4"></div>
+	<div class="bar5"></div>
+	<div class="bar6"></div>
+	<div class="bar7"></div>
+	<div class="bar8"></div>
+	<div class="bar9"></div>
+	<div class="bar10"></div>
+	<div class="bar11"></div>
+	<div class="bar12"></div>
+</div>
+	
+<div id="squares">
+	<div class="s1"></div>
+	<div class="s2"></div>
+	<div class="s3"></div>
+	<div class="s4"></div>
+	<div class="s5"></div>
+	<div class="s6"></div>
+	<div class="s7"></div>
+	<div class="s8"></div>
+</div>
+	
+<div id="one">
+	<h3>1</h3>
+	<p>Good design<br>is easy to<br>understand</p>
+	<p2>A clear design that could make<br>the user experience simple and<br>easy for anyone.</p2>
+</div>
+	
+<div id="two">
+	<h3>2</h3>
+	<p>Good design<br>is inclusive</p>
+	<p2>No one group should be felt like<br>they've been left out and/or are<br>able to appreciate design that<br>was meant for another.</p2>
+</div>
+
+<div id="three">
+	<h3>3</h3>
+	<p>Good design<br>is simplistic</p>
+	<p2>Sometimes less is better.<br>Too much can be confusing.</p2>
+</div>
+	
+<div id="four">
+	<h3>4</h3>
+	<p>Good design<br>is aesthetic</p>
+	<p2>If one was to see a product<br>daily then it's important<br>to ensure that the design<br>doesn't fatigue the viewer.</p2>
+</div>
+	
+<div id="five">
+	<h3>5</h3>
+	<p>Good design<br>tells a story</p>
+	<p2>A small sample of the<br>design/thought process<br>should be visable<br>throughout the work itself.</p2>
+</div>
+	
+<div id="six">
+	<h3>6</h3>
+	<p>Good design<br>is influential</p>
+	<p2>Other designers may want<br>to mimic anothers successful<br>work in their own.</p2>
+</div>
+	
+<div id="seven">
+	<h3>7</h3>
+	<p>Good design<br>has morals</p>
+	<p2>Design is commonly used to send<br>a message; what that message is<br>reflectes a designers own morals.</p2>
+</div>
+	
+<div id="eight">
+	<h3>8</h3>
+	<p>Good design is<br>environmentally<br>friendly</p>
+	<p2>Design makes an important<br>contribution to the preservation of<br>the environment. It conserves<br>resources and minimises physical<br>and visual pollution throughout<br>the lifecycle of the product.</p2>
+</div>
+	
+<div id="nine">
+	<h3>9</h3>
+	<p>Good design<br>is stable</p>
+	<p2>It ensures a product has longevity<br>to it without any compromise to<br>its stability and avoids any<br>unnecessary design elemments.</p2>
+</div>
+	
+<div id="ten">
+	<h3>10</h3>
+	<p>Good design<br>is honest</p>
+	<p2>It does not make a product<br>more innovative, powerful or<br>valuable than it really is. It does<br>not attempt to manipulate<br>the consumer with promises<br>that cannot be kept.</p2>
+</div>
+	
+</body>
+</html>
