@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New face</title>
+	<style>
+		body{
+			background-color: #909090;
+			margin-top: 80px;
+			margin-left: calc(50% - 750px);
+		}
+		
+		.circle1{
+			position: absolute;
+			z-index: 1;
+			top: 80px;
+			left: 400px;
+			width:780px;
+			height:820px;
+			background-color: #e6e6e6;
+			border-style: solid;
+			border-color: #222222;
+			border-width: 18px;
+			border-radius: 400px;
+		}
+		
+		.circle2{
+			position: absolute;
+			z-index: 3;
+			top: 445px;
+			left: 470px;
+			width:420px;
+			height:420px;
+			background-color: #e6e6e6;
+			border-style: solid;
+			border-color: #222222;
+			border-width: 18px;
+			border-radius: 400px;
+		}
+		.circle3{
+			position: absolute;
+			z-index: 3;
+			top: 135px;
+			left: 420px;
+			width:522px;
+			height:522px;
+			background-color: #e6e6e6;
+			border-style: solid;
+			border-color: #222222;
+			border-width: 18px;
+			border-radius: 400px;
+		}
+		.circle4{
+			position: absolute;
+			z-index: 3;
+			top: 415px;
+			left: 492px;
+			width:490px;
+			height:491.2px;
+			background-color: #e6e6e6;
+			border-style: none;
+			border-color: #222222;
+			border-width: 18px;
+			border-radius: 400px;
+		}
+		.circle5{
+			position: absolute;
+			z-index: 3;
+			top: 110px;
+			left: 452px;
+			width:620px;
+			height:600px;
+			background-color: #e6e6e6;
+			border-style: none;
+			border-color: #222222;
+			border-width: 14px;
+			border-radius: 400px;
+		}
+		.circle6{
+			position: absolute;
+			z-index: 2;
+			top: 220px;
+			left: 397px;
+			width:120px;
+			height:700px;
+			transform: rotate(-7.5deg);
+			background-color: #909090;
+			border-style: none;
+			border-color: #222222;
+			border-width: 14px;
+			border-radius: 400px;
+		}
+		 .crescent1{
+			z-index: 4;
+			width: 120px;
+			height: 180px;
+			background-color: #e6e6e6;
+			position: absolute;
+			transform: rotate(-10deg);
+			top:320px;
+			left:1120px;
+			box-shadow: 10px 0px 0px 5px #222222;
+			border-radius: 50%;
+ 		}
+		 .crescent2{
+			z-index: 4;
+			width: 60px;
+			height: 120px;
+			background-color: #e6e6e6;
+			position: absolute;
+			transform: rotate(-10deg);
+			top:350px;
+			left:1155px;
+			box-shadow: 6px 0px 0px 1px #222222;
+			border-radius: 50%;
+ 		}
+		#head{
+			transform: rotate(8deg);
+		}
+		.oval1{
+			position: absolute;
+			z-index: 8;
+			transform: rotate(80deg);
+			top: 290px;
+			left: 740px;
+			width:410px;
+			height:220px;
+			background-color: black;
+			border-radius: 200px / 120px;
+		}
+		.oval2{
+			position: absolute;
+			z-index: 5;
+			transform: rotate(-181deg);
+			top: 110px;
+			left: 270px;
+			width:660px;
+			height:240px;
+			background-color: black;
+			border-radius: 300px / 120px;
+		}
+		.oval2{
+			position: absolute;
+			z-index: 6;
+			transform: rotate(-181deg);
+			top: 110px;
+			left: 270px;
+			width:660px;
+			height:240px;
+			background-color: black;
+			border-radius: 300px / 120px;
+		}
+		.oval3{
+			position: absolute;
+			transform: rotate(-60deg);
+			top: 220px;
+			left: 160px;
+			width:280px;
+			height:140px;
+			background-color: black;
+			border-radius: 300px / 140px;
+		}
+		.crescent3{
+			z-index: 6;
+			width: 60px;
+			height: 220px;
+			background-color: transparent;
+			position: absolute;
+			transform: rotate(-110deg);
+			top:280px;
+			left:350px;
+			box-shadow: 40px 0px 0px 2px black;
+			border-radius: 50%;
+ 		}
+		#hair{
+			position: absolute;
+			margin-top: -90px;
+			margin-left: 90px;
+		}
+		.glass1{
+			z-index: 4;
+			width: 320px;
+			height: 320px;
+			background-color: #e6e6e6;
+			position: absolute;
+			top:350px;
+			left:580px;
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 9px;
+			border-color: #222222;
+		}
+		.glass2{
+			z-index: 0;
+			width: 320px;
+			height: 320px;
+			background-color: #e6e6e6;
+			position: absolute;
+			top:350px;
+			left:280px;
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 9px;
+			border-color: #222222;
+		}
+		.glass3{
+			z-index: 6;
+			width: 320px;
+			height: 320px;
+			background-color: transparent;
+			position: absolute;
+			top:350px;
+			left:580px;
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 9px;
+			border-color: #222222;
+		}
+		.glass4{
+			z-index: 2;
+			width: 320px;
+			height: 320px;
+			background-color: transparent;
+			position: absolute;
+			top:350px;
+			left:280px;
+			border-radius: 50%;
+			border-style: solid;
+			border-width: 9px;
+			border-color: #222222;
+		}
+		.oval4{
+			position: absolute;
+			z-index: 5;
+			transform: rotate(89deg);
+			top: 450px;
+			left: 600px;
+			width:270px;
+			height:140px;
+			background-color: #222222;
+			border-radius: 200px / 110px;
+			animation-name: eye;
+  			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+				@keyframes eye {
+				0%   {width:270px;}
+  				10% {width:280px; left: 596px;}
+				70% {width: 280px; left: 596px;}
+				100% {width:270px;}
+		}
+		.oval5{
+			position: absolute;
+			z-index: 0;
+			transform: rotate(89deg);
+			top: 450px;
+			left: 300px;
+			width:270px;
+			height:140px;
+			background-color: #222222;
+			border-radius: 200px / 110px;
+			animation-name: eye2;
+  			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+				@keyframes eye2 {
+				0%   {width:270px;}
+  				10% {width:280px; left: 296px;}
+				70% {width: 280px; left: 296px;}
+				100% {width:270px;}
+		}
+		.tri1{
+			position: absolute;
+			z-index: 5;
+			top: 410px;
+			left: 450px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 80px 110px 80px 0;
+			border-color: transparent #e6e6e6 transparent transparent;
+		}
+		.tri2{
+			position: absolute;
+			z-index: 5;
+			top: 410px;
+			left: 750px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 80px 110px 80px 0;
+			border-color: transparent #e6e6e6 transparent transparent;
+		}
+		.dot{
+			position: absolute;
+			z-index: 5;
+			top: 650px;
+			left: 380px;
+			width:20px;
+			height:20px;
+			background-color: #222222;
+			border-radius: 200px;
+		}
+		.line1{
+			position: absolute;
+			z-index: 5;
+			transform: rotate(180deg);
+			top: 400px;
+			left: 360px;
+			width:150px;
+			height:10px;
+			background-color: #222222;
+			border-radius: 200px / 110px;
+			animation-name: up;
+  			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+				@keyframes up {
+				0%   {top:400px;}
+  				50% {top:300px;}
+				100% {top:400px;}
+		}
+		.line2{
+			position: absolute;
+			z-index: 5;
+			transform: rotate(180deg);
+			top: 400px;
+			left: 660px;
+			width:150px;
+			height:10px;
+			background-color: #222222;
+			border-radius: 200px / 110px;
+			animation-name: up;
+  			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+		.block1{
+			position: absolute;
+			z-index: 1;
+			top: 380px;
+			left: 380px;
+			width:100px;
+			height:20px;
+			background-color: #e6e6e6;
+			animation-name: up2;
+  			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+			@keyframes up2 {
+				0%   {top:380px;}
+  				50% {top:280px;}
+				100% {top:380px;}
+		}
+		.block2{
+			position: absolute;
+			z-index: 5;
+			top: 380px;
+			left: 680px;
+			width:100px;
+			height:20px;
+			background-color: #e6e6e6;
+			animation-name: up2;
+  			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+		.crescent4{
+			z-index: 5;
+			width: 160px;
+			height: 140px;
+			background-color: #e6e6e6;
+			position: absolute;
+			transform: rotate(-180deg);
+			top:620px;
+			left:430px;
+			box-shadow: 8px 0px 0px 6px #222222;
+			border-radius: 50%;
+ 		}
+		.line3{
+			position: absolute;
+			z-index: 5;
+			transform: rotate(160deg);
+			top: 840px;
+			left: 500px;
+			width:400px;
+			height:20px;
+			background-color: #222222;
+			border-radius: 200px / 110px;
+			animation-name: uh;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+				@keyframes uh{
+				0% {width: 400px;}
+				50% {width: 100px; top: 910px; left: 510px;}
+				100% {width: 400px;}
+		}
+		.crescent5{
+			z-index: 7;
+			width: 100px;
+			height: 120px;
+			background-color: #e6e6e6;
+			position: absolute;
+			transform: rotate(-200deg);
+			top:730px;
+			left:820px;
+			box-shadow: 8px 0px 0px 4px #222222;
+			border-radius: 50%;
+			animation-name: shrink;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+ 		}
+			@keyframes shrink{
+				0% {height: 120px;}
+				30% {height: 0px; top: 780px;}
+				50% {height: 0px; top: 780px;}
+				100% {height: 120px;}
+		}
+		#eye{
+			position: absolute;
+			left: 40px;
+			top: 1000px;
+		}
+		.smile{
+			position: absolute;
+			z-index: 6;
+			transform: rotate(160deg);
+			top: 850px;
+			left: 500px;
+			width:400px;
+			height:0px;
+			background-color: #222222;
+			border-radius: 160px / 140px;
+			animation-name: grow;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}
+			@keyframes grow {
+				0% {height 0px;}
+				50% {height: 120px; top: 810px;}
+				100% {height: 0px;}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="head">
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="circle4"></div>
+		<div class="circle5"></div>
+		<div class="circle6"></div>
+		<div class="circle7"></div>
+		<div class ="crescent1"> </div>
+		<div class ="crescent2"> </div>
+	</div>
+	
+	<div id="hair">
+		<div class="oval1"></div>
+		<div class="oval2"></div>
+		<div class="oval3"></div>
+		<div class ="crescent3"></div>
+
+		<div class="glass1"></div>
+		<div class="glass2"></div>
+		<div class="glass3"></div>
+		<div class="glass4"></div>
+		<div class="oval4"></div>
+		<div class="oval5"></div>
+		<div class="tri1"></div>
+		<div class="tri2"></div>
+		<div class="dot"></div>
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="block1"></div>
+		<div class="block2"></div>
+		<div class ="crescent4"> </div>
+		<div class="line3"></div>
+		<div class ="crescent5"> </div>
+		
+		<div class="smile"></div>
+	</div>
+</body>
+</html>
