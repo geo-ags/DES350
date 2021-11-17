@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>uh</title>
+<style>
+	body{
+		background-color: grey;
+		margin: 0px;
+		padding: 0px;
+	}
+	.card{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 40%;
+		height: 90vh;
+		background: url("poster_bw.jpg") no-repeat center;
+		background-size: contain;
+	}
+	.card:hover{
+		background: url("poster.gif") no-repeat center;
+		background-size: contain;
+	}
+	#preload{
+		background: url("poster.gif") no-repeat -9999px -9999px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="card"></div>
+	<div id="preload"></div>
+</body>
+</html>
